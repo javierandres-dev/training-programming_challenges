@@ -3,6 +3,7 @@ import re
 
 
 def main_one(filename):
+    """ According to the rules, it return the number of valid passports """
     areValid = 0
     with open(filename, "r") as f:
         _str = (f.read())
@@ -25,6 +26,7 @@ def main_one(filename):
 
 
 def main_two(filename):
+    """ According to the new rules, it return the number of valid passports """
     areValid = 0
     with open(filename, "r") as f:
         _str = (f.read())
