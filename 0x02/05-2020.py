@@ -55,5 +55,26 @@ def main_one(boarding_passes):
     return highest
 
 
+def main_two(boarding_passes):
+    """ Return my seat ID """
+    with open(boarding_passes, "r") as f:
+        lines = f.readlines()
+    bbpp = []
+    for line in lines:
+        bbpp.append(line.strip())
+    ul = []
+    for bp in bbpp:
+        row = search_row(bp[:-3])
+        column = search_column(bp[-3:])
+        seatId = row * 8 + column
+        ul.append(seatId)
+    ol = sorted(ul)
+    for idx, value in enumerate(ol):
+        if not value - 1 == ol[idx - 1]:
+            if value - 2 == ol[idx - 1]:
+                return value - 1
+
+
 if __name__ == "__main__":
     print(main_one("05-2020.txt"))
+    print(main_two("05-2020.txt"))
