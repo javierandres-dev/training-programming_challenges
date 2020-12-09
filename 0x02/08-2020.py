@@ -20,6 +20,8 @@ def main_one(filename):
             instructions.append(instruction)
             operation = data[instruction][:3]
             argument = int(data[instruction][4:])
+            if operation == "nop":
+                pass
             if operation == "acc":
                 accumulator += argument
             if operation == "jmp":
@@ -29,8 +31,7 @@ def main_one(filename):
 
 
 def main_two(filename):
-    """ Return accumulator value immediately before any instruction is executed
-    a second time """
+    """ Return accumulator value after the program terminates """
     with open(filename, "r") as f:
         lines = f.readlines();
     data = []
@@ -47,6 +48,8 @@ def main_two(filename):
             instructions.append(instruction)
             operation = data[instruction][:3]
             argument = int(data[instruction][4:])
+            if operation == "nop":
+                pass
             if operation == "acc":
                 accumulator += argument
             if operation == "jmp":
