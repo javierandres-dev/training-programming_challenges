@@ -1,5 +1,5 @@
-""" Escribe un programa que lee N números y los ordena en orden no decreciente
-"""
+""" 0xdd - Ordenar un arreglo pequeño
+Escribe un programa que lee N números y los ordena en orden no decreciente """
 
 
 def bubble_sort():
