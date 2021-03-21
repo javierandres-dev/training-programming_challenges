@@ -2,10 +2,9 @@
 ## Self-training ― Programming
 
 ## Projects
-* :open_file_folder: 0x00 [Project Euler](https://projecteuler.net/)
-* :open_file_folder: 0x01 [Codeo](https://codeo.app/)
-* :open_file_folder: 0x02 [Advent of Code](https://adventofcode.com/)
+* :open_file_folder: [advent-of-code-2020](https://adventofcode.com/)
+* :open_file_folder: [codeo](https://codeo.app/)
+* :open_file_folder: [project-euler](https://projecteuler.net/)
 
 ## Software engineer
-Javier Andrés Garzón Patarroyo  
-:octocat: [GitHub](https://github.com/javierandresgp/)
+[Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com/)
