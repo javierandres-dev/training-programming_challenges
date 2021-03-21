@@ -1,5 +1,8 @@
-# programming-challenges
-## Self-training ― Programming
+# Self―Training
+:octocat: training-programming_challenges
+
+## Description
+Self-training ― Programming ― Algorithms
 
 ## Projects
 * :open_file_folder: [advent-of-code-2020](https://adventofcode.com/)
