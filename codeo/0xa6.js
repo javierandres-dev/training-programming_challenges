@@ -30,10 +30,8 @@ rl.on('line', (input) => {
 });
 
 const findGreatestSubmatrix = () => {
-  //console.log(matrix);
   let greatest = 0;
   for (let row = 0; row < matrix.length; row++) {
-    //console.log(matrix[row]);
     for (let column = 0; column < matrix.length; column++) {
       const element = matrix[row][column];
     }
