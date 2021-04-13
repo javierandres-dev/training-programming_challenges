@@ -20,19 +20,11 @@ const GANG: Array<string> = [
   'Oslo',
 ];
 
-function isAllowed(aName: string): boolean {
-  let i: number = 0;
-  while (i < GANG.length) {
-    if (aName === GANG[i]) {
-      return true;
-    }
-    i++;
-  }
-  return false;
-}
+const isMember = (member: string): boolean => GANG.includes(member);
 
-console.log(isAllowed('Bogotá'));
-console.log(isAllowed('Barcelona'));
-console.log(isAllowed('Río'));
-console.log(isAllowed('Madrid'));
-console.log(isAllowed('Oslo'));
+console.log(isMember('Bogotá'));
+console.log(isMember('Barcelona'));
+console.log(isMember('Río'));
+console.log(isMember('Madrid'));
+console.log(isMember('El Profesor'));
+console.log(isMember('Oslo'));
