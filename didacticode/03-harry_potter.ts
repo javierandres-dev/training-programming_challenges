@@ -7,9 +7,15 @@ const checkMoves = (list: Array<Array<number>>): string => {
   let finalPassengers: number = 0,
     gotOn: number = 0,
     gotOff: number = 0;
-  for (let i = 0; i < list.length; i++) {}
+  for (let i = 0; i < list.length; i++) {
+    gotOn += list[i][0];
+    gotOff += list[i][1];
+  }
+  finalPassengers = gotOn - gotOff;
+  return `${finalPassengers} pasajeros`;
 };
 
+// tests
 console.log(
   checkMoves([
     [7, 0],
