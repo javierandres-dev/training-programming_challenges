@@ -36,21 +36,33 @@ function isMember(member: string): boolean {
 
 /**
  * Second solution
- */
-const isMember = (member: string) => {
-  if (GANG.find((el) => console.log(member === el))) true;
+ *
+const isMember = (member: string): boolean => {
+  const res: number = GANG.indexOf(member);
+  if (res === -1) return false;
+  return true;
 };
+/*
 
 /**
- * solution
+ * Third solution
  *
+const isMember = (member: string): boolean => {
+  const res: number = GANG.findIndex((name) => name === member);
+  if (res === -1) return false;
+  return true;
+};
+/*
+
+/**
+ * Fourth solution
+ */
 const isMember = (member: string): boolean => GANG.includes(member);
-*/
 
 // tests
+console.log(isMember('El Profesor'));
 console.log(isMember('Bogotá'));
 console.log(isMember('Barcelona'));
 console.log(isMember('Río'));
 console.log(isMember('Madrid'));
-console.log(isMember('El Profesor'));
 console.log(isMember('Oslo'));
