@@ -62,6 +62,7 @@ const rgbToHexadecimal2_ = (aNumber: number): string => {
   }
   return hexCode;
 };
+
 const rgbToHexadecimal2 = (r: number, g: number, b: number): string => {
   if (isValid(r) && isValid(g) && isValid(b)) {
     return `#${rgbToHexadecimal2_(r)}${rgbToHexadecimal2_(
@@ -72,9 +73,20 @@ const rgbToHexadecimal2 = (r: number, g: number, b: number): string => {
   }
 };
 
+/**
+ * Third solution
+ */
+const rgbToHexadecimal3 = (r: number, g: number, b: number): string => {
+  const hexCode = (aNumber: number) =>
+    ('0' + Math.max(0, Math.min(255, aNumber)).toString(16))
+      .slice(-2)
+      .toUpperCase();
+  return `#${hexCode(r)}${hexCode(g)}${hexCode(b)}`;
+};
+
 // tests
-console.log(rgbToHexadecimal2(0, 36, 255));
-console.log(rgbToHexadecimal2(255, 36, 123));
-console.log(rgbToHexadecimal2(12, 234, 7));
-console.log(rgbToHexadecimal2(0, 0, 0));
-console.log(rgbToHexadecimal2(255, 255, 255));
+console.log(rgbToHexadecimal3(0, 36, 255));
+console.log(rgbToHexadecimal3(255, 36, 123));
+console.log(rgbToHexadecimal3(12, 234, 7));
+console.log(rgbToHexadecimal3(0, 0, 0));
+console.log(rgbToHexadecimal3(255, 255, 255));
