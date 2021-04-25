@@ -7,6 +7,7 @@
     "noImplicitAny": true,
     "removeComments": true,
     "outDir": "dist",
+    //"outFile": "./dist/script.js",
     "sourceMap": true,
     "preserveConstEnums": true,
     "esModuleInterop": true,
