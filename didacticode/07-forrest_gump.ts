@@ -3,7 +3,7 @@ let chronometer = {
     hours: 0,
     minutes: 0,
     seconds: 0,
-    centisecond: 0,
+    centiseconds: 0,
   },
   run: any;
 
@@ -14,7 +14,7 @@ const getChronometer = (): string => {
   return `${formatDecimal(chronometer.hours)}:${formatDecimal(
     chronometer.minutes
   )}´${formatDecimal(chronometer.seconds)}´´${formatDecimal(
-    chronometer.centisecond
+    chronometer.centiseconds
   )}`;
 };
 
@@ -27,29 +27,31 @@ const setMinutes = (): void => {
     ? (chronometer.minutes = 0)
     : chronometer.minutes++;
 };
+
 const setSeconds = (): void => {
   chronometer.seconds === 59
     ? (chronometer.seconds = 0)
     : chronometer.seconds++;
 };
-const setCentisecond = (): void => {
-  chronometer.centisecond === 99
-    ? (chronometer.centisecond = 0)
-    : chronometer.centisecond++;
+
+const setCentisecondss = (): void => {
+  chronometer.centiseconds === 99
+    ? (chronometer.centiseconds = 0)
+    : chronometer.centiseconds++;
 };
 
 const incrementChronometer = (): void => {
-  setCentisecond();
-  if (chronometer.centisecond === 0) {
+  setCentisecondss();
+  if (chronometer.centiseconds === 0) {
     setSeconds();
   }
-  if (chronometer.seconds === 0 && chronometer.centisecond === 0) {
+  if (chronometer.seconds === 0 && chronometer.centiseconds === 0) {
     setMinutes();
   }
   if (
     chronometer.minutes === 0 &&
     chronometer.seconds === 0 &&
-    chronometer.centisecond === 0
+    chronometer.centiseconds === 0
   ) {
     setHours();
   }
@@ -90,7 +92,7 @@ Seleccione una opción:
     hours: 0,
     minutes: 0,
     seconds: 0,
-    centisecond: 0,
+    centiseconds: 0,
   };
 };
 
@@ -99,7 +101,7 @@ const resetChronometer = () => {
     hours: 0,
     minutes: 0,
     seconds: 0,
-    centisecond: 0,
+    centiseconds: 0,
   };
   process.stdout.write('Ha seleccionado: "4-Reiniciar"\t');
 };
