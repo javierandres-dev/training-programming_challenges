@@ -34,14 +34,14 @@ const setSeconds = (): void => {
     : chronometer.seconds++;
 };
 
-const setCentisecondss = (): void => {
+const setCentiseconds = (): void => {
   chronometer.centiseconds === 99
     ? (chronometer.centiseconds = 0)
     : chronometer.centiseconds++;
 };
 
 const incrementChronometer = (): void => {
-  setCentisecondss();
+  setCentiseconds();
   if (chronometer.centiseconds === 0) {
     setSeconds();
   }
