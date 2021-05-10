@@ -1,41 +1,149 @@
 /* Crear un cronómetro con sus opciones de iniciar, pausar, detener, reiniciar.Mostrar tiempos. */
-let option: string | undefined = undefined;
+let chronometer = {
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+    centisecond: 0,
+  },
+  run: any;
 
-function ask(): void {
-  process.stdout.write(
-    'Seleccione una opción:\n1-Iniciar, 2-Pausar, 3-Detener, 4-Reiniciar, 5-Salir.\n'
-  );
-}
-ask();
+const formatDecimal = (aNum: number): string =>
+  aNum < 10 ? `0${aNum}` : `${aNum}`;
 
-process.stdin.on('data', (data) => {
-  option = data.toString().trim();
-  if (option === '5') {
-    process.exit();
-  } else {
+const getChronometer = (): string => {
+  return `${formatDecimal(chronometer.hours)}:${formatDecimal(
+    chronometer.minutes
+  )}´${formatDecimal(chronometer.seconds)}´´${formatDecimal(
+    chronometer.centisecond
+  )}`;
+};
+
+const setHours = (): void => {
+  chronometer.hours === 23 ? (chronometer.hours = 0) : chronometer.hours++;
+};
+
+const setMinutes = (): void => {
+  chronometer.minutes === 59
+    ? (chronometer.minutes = 0)
+    : chronometer.minutes++;
+};
+const setSeconds = (): void => {
+  chronometer.seconds === 59
+    ? (chronometer.seconds = 0)
+    : chronometer.seconds++;
+};
+const setCentisecond = (): void => {
+  chronometer.centisecond === 99
+    ? (chronometer.centisecond = 0)
+    : chronometer.centisecond++;
+};
+
+const incrementChronometer = (): void => {
+  setCentisecond();
+  if (chronometer.centisecond === 0) {
+    setSeconds();
+  }
+  if (chronometer.seconds === 0 && chronometer.centisecond === 0) {
+    setMinutes();
+  }
+  if (
+    chronometer.minutes === 0 &&
+    chronometer.seconds === 0 &&
+    chronometer.centisecond === 0
+  ) {
+    setHours();
+  }
+};
+
+const startChronometer = (): void => {
+  process.stdout.write('Ha seleccionado: "1-Iniciar"\t');
+  run = setInterval(() => {
+    process.stdout.write(`${getChronometer()}\n`);
+    incrementChronometer();
+  }, 1);
+};
+
+const pauseChronometer = (): void => {
+  clearInterval(run);
+  process.stdout.write('Ha seleccionado: "2-Pausar"\t');
+  process.stdout.write(`
+--------------------------------
+Cronómetro:\t${getChronometer()}
+--------------------------------
+Seleccione una opción:
+1-Iniciar, 2-Pausar (PAUSADO), 3-Detener, 4-Reiniciar, 5-Salir.
+`);
+};
+
+const stopChronometer = () => {
+  clearInterval(run);
+  run = null;
+  process.stdout.write('Ha seleccionado: "3-Detener"\t');
+  process.stdout.write(`
+--------------------------------
+Cronómetro:\t${getChronometer()}
+--------------------------------
+Seleccione una opción:
+1-Iniciar, 2-Pausar, 3-Detener (DETENIDO), 4-Reiniciar, 5-Salir.
+`);
+  chronometer = {
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+    centisecond: 0,
+  };
+};
+
+const resetChronometer = () => {
+  chronometer = {
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+    centisecond: 0,
+  };
+  process.stdout.write('Ha seleccionado: "4-Reiniciar"\t');
+};
+
+const offChronometer = () => {
+  clearInterval(run);
+  run = null;
+  process.stdout.write('Ha seleccionado: "5-salir"');
+  process.exit();
+};
+
+function onChronometer(): void {
+  let option: string;
+  process.stdout.write(`
+--------------------------------
+Cronómetro:\t${getChronometer()}
+--------------------------------
+Seleccione una opción:
+1-Iniciar, 2-Pausar, 3-Detener, 4-Reiniciar, 5-Salir.
+`);
+
+  process.stdin.on('data', (data) => {
+    option = data.toString().trim();
+
     switch (option) {
       case '1':
-        console.log('...1...');
-        ask();
+        startChronometer();
         break;
       case '2':
-        console.log('...2...');
-        ask();
+        pauseChronometer();
         break;
       case '3':
-        console.log('...3...');
-        ask();
+        stopChronometer();
         break;
       case '4':
-        console.log('...4...');
-        ask();
+        resetChronometer();
         break;
       case '5':
-        console.log('...5...');
+        offChronometer();
         break;
       default:
-        console.log('...?...');
+        process.stdout.write('Selecciona una opción válida.');
         break;
     }
-  }
-});
+  });
+}
+onChronometer();
