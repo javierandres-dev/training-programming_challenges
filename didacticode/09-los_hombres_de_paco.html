@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>09-los_hombres_de_paco</title>
+  </head>
+  <body>
+    <p>Calculadora de la letra de control para creación de NIFs y NIEs</p>
+    <ul>
+      <li>
+        – Los NIFs (Número de Identificación Fiscal) están formados por 8
+        dígitos y una letra de control.
+      </li>
+      <li>
+        – Los NIEs (Número de Identificación Extranjero) están formados por una
+        letra (X, Y o Z), 7 dígitos y una letra de control.<br />
+        Estas letras iniciales equivalen a 0, 1 o 2 respectivamente de cara a
+        hacer los cálculos.
+      </li>
+    </ul>
+    <hr />
+    <label for="input">NIF / NIE</label><br />
+    <input
+      id="input"
+      type="text"
+      maxlength="8"
+      pattern="^([XYZ][0-9]{7})|([0-9]{8})$"
+    /><br />
+    <p id="result"></p>
+  </body>
+  <script>
+    const d = document,
+      $input = d.getElementById('input'),
+      $result = d.getElementById('result'),
+      NIEletters = ['X', 'Y', 'Z'],
+      LETTERS = [
+        'T',
+        'R',
+        'W',
+        'A',
+        'G',
+        'M',
+        'Y',
+        'F',
+        'P',
+        'D',
+        'X',
+        'B',
+        'N,',
+        'J',
+        'Z',
+        'S',
+        'Q',
+        'V',
+        'H',
+        'L',
+        'C',
+        'K',
+        'E',
+      ];
+    d.addEventListener('DOMContentLoaded', eventListeners);
+
+    function eventListeners() {
+      $input.addEventListener('keyup', (e) => {
+        if ($input.value.length === 8) {
+          if (e.target.checkValidity()) {
+            let input = $input.value;
+            let type = null;
+            if (NIEletters.includes(input.substr(0, 1))) {
+              type = 'NIE';
+              input = input.replace(input[0], NIEletters.indexOf(input[0]));
+            } else type = 'NIF';
+            const idx = input % 23;
+            $result.innerHTML = `${type}, Letra de control: ${LETTERS[idx]}`;
+          } else {
+            alert(`"${$input.value}" no es NIF/NIE válido.`);
+          }
+        }
+      });
+    }
+  </script>
+</html>
