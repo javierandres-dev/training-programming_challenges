@@ -20,8 +20,8 @@ function isLeapYear(year) {
   return false;
   */
 }
-console.log(isLeapYear(2016));
-console.log(isLeapYear(2000));
-console.log(isLeapYear(1700));
-console.log(isLeapYear(1800));
-console.log(isLeapYear(100));
+console.info(isLeapYear(2016));
+console.info(isLeapYear(2000));
+console.info(isLeapYear(1700));
+console.info(isLeapYear(1800));
+console.info(isLeapYear(100));
