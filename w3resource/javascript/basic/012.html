@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html><head><title>012</title></head><body>
+    <div>012</div>
+    <button onclick="getWebsiteUrl()">Get the website URL</button>
+    <div id="result"></div>
+    <script>
+        /*
+        12. Write a JavaScript program to get the website URL (loading page).
+        */
+       $result = document.getElementById("result")
+       function getWebsiteUrl() {
+        const witWurl = window.location.href
+        const witDurl = document.URL
+        $result.innerHTML = `
+        <div>${witWurl} (window)</div>
+        <div>${witDurl} (document)</div>
+        `;
+       }
+    </script>
+</body></html>

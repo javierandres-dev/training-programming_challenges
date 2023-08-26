@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>014</title>
+    </head>
+    <body>
+        <div>014</div>
+        <script>
+            /*
+14. Write a JavaScript exercise to get the filename extension.
+*/
+const filename = prompt("Enter a filename: ")
+const divided = filename.split(".")
+if (divided.length === 2) {
+    alert(`The file extension is: "${divided[1]}"`)
+}else {
+    alert("Invalid filename")
+}
+        </script>
+    </body>
+</html>
