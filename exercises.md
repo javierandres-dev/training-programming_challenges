@@ -3,6 +3,7 @@
 - Pedir nombre y edad al usuario, mostrar nombre y edad.
 - Pedir nombre y aplellido, mostrar apellido y nombre separados por un espacio.
 - Pedir nombre al usuario y saludarlo, de otra manera saludar anonimo.
+- Historias locas
 - Pedir un número, mostrar el doble de n.
 - Pedir un número, mostrar el triple de n.
 - Pedir un número, mostrar la mitad de n.
@@ -74,6 +75,11 @@ y los mismos valores, en cualquier otro caso retornar FALSE.
 - Programa que genere un número aleatorio entre 1 y 10, lo compare hasta con 3
 ingresados, si el número aleatorio es igual a alguno ingresado retornar TRUE, de
 otra manera retornar FALSE.
+---
+- Guess the number (computer)
+- Guess the number (user)
+- Rock Paper Scissors (r > s, s > p, r > r)
+- Hangman
 ---
 6. Calculate 10!
 10. Calculate the sum of numbers in an array of numbers
