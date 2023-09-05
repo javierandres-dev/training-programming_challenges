@@ -80,6 +80,9 @@ otra manera retornar FALSE.
 - Guess the number (user)
 - Rock Paper Scissors (r > s, s > p, r > r)
 - Hangman
+- Tic Tak Toe
+- Tic Tak Toe Unbeatable AI
+- Binary search
 ---
 6. Calculate 10!
 10. Calculate the sum of numbers in an array of numbers
