@@ -83,6 +83,10 @@ otra manera retornar FALSE.
 - Tic Tak Toe
 - Tic Tak Toe Unbeatable AI
 - Binary search
+- Minesweeper
+- Sudoku solver
+
+- Drawn fake credit card
 ---
 6. Calculate 10!
 10. Calculate the sum of numbers in an array of numbers
