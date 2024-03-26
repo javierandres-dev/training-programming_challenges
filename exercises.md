@@ -75,6 +75,11 @@ y los mismos valores, en cualquier otro caso retornar FALSE.
 - Programa que genere un número aleatorio entre 1 y 10, lo compare hasta con 3
 ingresados, si el número aleatorio es igual a alguno ingresado retornar TRUE, de
 otra manera retornar FALSE.
+
+- Programa que permita el intercambio de valores entre dos variables.
+Ejemplo: Si un variable uno tiene como valor 8 y variable dos tiene como valor 4,
+realizar las acciones necesarias para que uno almacene 4 y dos almacene 8 y
+mostrar el cambio.
 ---
 - Guess the number (computer)
 - Guess the number (user)
