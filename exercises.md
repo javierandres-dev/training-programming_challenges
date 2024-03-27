@@ -80,6 +80,8 @@ otra manera retornar FALSE.
 Ejemplo: Si un variable uno tiene como valor 8 y variable dos tiene como valor 4,
 realizar las acciones necesarias para que uno almacene 4 y dos almacene 8 y
 mostrar el cambio.
+
+- Programa que reciba categoría del afiliado y muestre valor a pagar según categoría.
 ---
 - Guess the number (computer)
 - Guess the number (user)
