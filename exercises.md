@@ -82,6 +82,12 @@ realizar las acciones necesarias para que uno almacene 4 y dos almacene 8 y
 mostrar el cambio.
 
 - Programa que reciba categoría del afiliado y muestre valor a pagar según categoría.
+
+- Programa que permita cargar 12 números en un vector.  Una vez cargados,
+mostrar el número de veces que se cargó el número 8.
+
+- Programa que permita cargar 3 notas por alumno, siendo el total de alumnos 4.
+Una vez cargados, mostrar las 3 notas y el promedio correspondiente de cada alumno.
 ---
 - Guess the number (computer)
 - Guess the number (user)
