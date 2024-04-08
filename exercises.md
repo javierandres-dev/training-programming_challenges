@@ -88,6 +88,16 @@ mostrar el número de veces que se cargó el número 8.
 
 - Programa que permita cargar 3 notas por alumno, siendo el total de alumnos 4.
 Una vez cargados, mostrar las 3 notas y el promedio correspondiente de cada alumno.
+
+- Programa que simule un juego de adivinanzas.
+El programa debe generar un número aleatorio entre 0 y 100,
+y pedir al usuario que intente adivinar ese número en un máximo de 5 intentos.
+En cada intento, el programa debe informar si el número ingresado por el usuario es mayor o menor que el número generado.
+
+- Programa que simule transacciones bancarias.
+Inicializar un cliente con nombre, tipo de cuenta y saldo disponible.
+Solicitar el número de la opción deseada entre consultar saldo, retirar, depositar o salir.
+Mostrar resultados según selección.
 ---
 - Guess the number (computer)
 - Guess the number (user)
