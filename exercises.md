@@ -1,4 +1,6 @@
 - Mostrar "Hola, Mundo!"
+* Escribir una pequeña historia, el nombre del personaje principal y el lugar deben estar en variables
+  - Pedir nombre y lugar al usuario
 - Pedir nombre al usuario y saludarlo.
 - Pedir nombre y edad al usuario, mostrar nombre y edad.
 - Pedir nombre y aplellido, mostrar apellido y nombre separados por un espacio.
