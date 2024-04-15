@@ -85,6 +85,11 @@ mostrar el cambio.
 
 - Programa que reciba categoría del afiliado y muestre valor a pagar según categoría.
 
+- Programa que reciba nombre y valor unitario de un producto, debe calcular impuestos y mostrar el total con detalles del producto.
+
+- Programa que de acuerdo a un ingreso calcule los valores correspondientes a cada bolsillo
+así: 20% ahorros e inversiones, 50% necesidades, 30% deseos.
+
 - Programa que permita cargar 12 números en un vector.  Una vez cargados,
 mostrar el número de veces que se cargó el número 8.
 
@@ -100,6 +105,26 @@ En cada intento, el programa debe informar si el número ingresado por el usuari
 Inicializar un cliente con nombre, tipo de cuenta y saldo disponible.
 Solicitar el número de la opción deseada entre consultar saldo, retirar, depositar o salir.
 Mostrar resultados según selección.
+
+- Programa que calcule el costo del render, las variables son: precio por minuto de render y cantidad de minutos a renderizar.
+- Programa que reciba la tasa de respiraciones por minuto (RPM) y de acuerdo al valor ingresado muestre su estado normal, bajo o alto.
+RPM entre 12 y 20 = rango normal.
+- Programa que reciba edad, nivel de actividad y genero;
+edad: en años
+nivel de actividad: sedentario, moderado, activo
+genero: femenino, masculino
+
+femenino frecuencia máxima =  226 - edad
+masculino frecuencia máxima =  220 - edad
+
+sedentario
+rango min =  frecuencia máxima * 0.5;
+moderado
+rango min =  frecuencia máxima * 0.6
+activo
+rango min =  frecuencia máxima * 0.7
+
+rango max =  frecuencia máxima * 0.85
 ---
 - Guess the number (computer)
 - Guess the number (user)
