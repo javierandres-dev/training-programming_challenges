@@ -1,3 +1,6 @@
+* Realizar diagrama de flujo y pseudocódigo
+  - Determinar si "x número" positivo, negativo o cero
+---
 - Mostrar "Hola, Mundo!"
 * Escribir una pequeña historia, el nombre del personaje principal y el lugar deben estar en variables
   - Pedir nombre y lugar al usuario
@@ -32,6 +35,8 @@
 - Pedir dos números, mostrar la división.
 - Pedir dos números, mostrar el resto de la división.
 - Pedir dos números y el nombre de una operación, mostrar el resultado.
+
+- Pedir tres números, mostrar mayor, menor e iguales.
 
 - Programa que retorne el área de un cuadrado.
 - Programa que retorne el área de un triángulo.
@@ -125,6 +130,16 @@ activo
 rango min =  frecuencia máxima * 0.7
 
 rango max =  frecuencia máxima * 0.85
+
+- Usando escape de caracteres formatear el siguiente texto "Curso nivel bbásico de progración,inicia el 1 de enerro y finalizaa el 31 de diciembre"
+- Pedir nombre de archivo y mostrar extensión del mismo en mayúsculas
+* Pedir sueldo y años de antigüedad
+  - Si el sueldo es inferior a 500 y su antigüedad es igual o superior a 10 años, otorgarle un aumento del 20 %, mostrar el sueldo a pagar.
+  - Si el sueldo es inferior a 500 pero su antigüedad es menor a 10 años, otorgarle un aumento de 5 %.
+  - Si el sueldo es mayor o igual a 500 mostrar el sueldo en pantalla sin cambios
+
+- Pasar n números decimales a binario, octal, hexadecimal
+- Pasar n números binarios a decimales
 ---
 - Guess the number (computer)
 - Guess the number (user)
