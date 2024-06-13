@@ -4,18 +4,6 @@
   - Determinar si "x número" positivo, negativo o cero
 
 # Desafíos
-- Mostrar "Hello, World!"
-- Leer nombre y apellido, mostrar apellido y nombre separados por un espacio
-- Leer nombre de usuario y saludarlo
-- Leer nombre y edad de usuario, mostrar nombre y edad
-- Leer nombre de usuario y saludarlo, de otra manera saludar anonimo
-- Leer nombre y edad al usuario y responder si es o no es mayor de edad
-* Leer opción
-  - si opción es A, permitir ingreso a sala de espera 1
-  - si opción es B, permitir ingreso a sala de espera 2
-  - si opción es C, permitir ingreso a sala de espera 3
-  - sino dirigir a la sala de espera general
-
 Historias locas  
 - Leer nombre personaje principal
 - Leer lugar
