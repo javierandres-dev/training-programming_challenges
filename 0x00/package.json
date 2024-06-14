@@ -1,0 +1,12 @@
+{
+  "name": "0x00",
+  "version": "0.0.1",
+  "description": "0x00",
+  "main": "script.ts",
+  "scripts": {
+    "start": "tsc -w script.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

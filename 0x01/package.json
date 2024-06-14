@@ -1,0 +1,9 @@
+{
+  "name": "0x01",
+  "version": "0.0.1",
+  "description": "0x01",
+  "main": "script.js",
+  "scripts": {
+    "start": "node --watch script.js"
+  }
+}
