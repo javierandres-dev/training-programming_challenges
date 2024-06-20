@@ -4,20 +4,6 @@
   - Determinar si "x número" positivo, negativo o cero
 
 # Desafíos
-Historias locas  
-- Leer nombre personaje principal
-- Leer lugar
-- Escribir una pequeña historia, el nombre del personaje principal y el lugar leerlas de variables
-
-- Leer un número, mostrar el doble de n.
-- Leer un número, mostrar el triple de n.
-- Leer un número, mostrar la mitad de n.
-- Leer un número, mostrar la tercera parte de n.
-- Leer un número, mostrar el cuadrado de n.
-- Leer un número, mostrar n reducido en 5.
-- Leer un número, mostrar el doble de n más 4.
-
-- Leer un número, mostrar si es positivo, negativo o si es cero.
 - Leer un número, mostrar si es par, impar o si es cero.
 - Leer un número, mostrar si es un número primo o no.
 
