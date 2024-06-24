@@ -4,9 +4,6 @@
   - Determinar si "x número" positivo, negativo o cero
 
 # Desafíos
-- Leer un número, mostrar si es par, impar o si es cero.
-- Leer un número, mostrar si es un número primo o no.
-
 - Leer dos números, mostrar el mayor.
 - Leer dos números, mostrarlos en orden ascendente.
 - Leer dos números, mostrar la suma.

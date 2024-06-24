@@ -4,11 +4,13 @@ const readlinePromises = require('node:readline/promises');
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
+  terminal: false,
 });
 
 const rlp = readlinePromises.createInterface({
   input: process.stdin,
   output: process.stdout,
+  terminal: false,
 });
 /* **** LEVEL 0 **** */
 // Output: "Hello, World!"
@@ -31,6 +33,7 @@ function outputValueFromInput() {
 async function crazyStory() {
   const character = await rlp.question('Character: ');
   const place = await rlp.question('Place: ');
+  rlp.close();
 
   console.log(
     `In ${place}, ${character}, a young journalist, hurried through the rain-soaked streets. She was chasing a lead on a historic mystery tied to an old, abandoned mansion in Kensington. Arriving, she pushed open the creaking door and stepped into the dimly lit hall. Dust covered the grand staircase, and cobwebs hung from chandeliers. ${character}'s heart raced as she discovered a hidden room behind a bookcase. Inside, she found diaries and letters detailing a secret love affair between a noblewoman and a commoner. As she read, ${character} realized this story could change everything she knew about ${place}’s history. She smiled, feeling the thrill of the discovery.`
@@ -127,33 +130,42 @@ function isPositiveNegativeOrZero() {
 // isPositiveNegativeOrZero();
 
 // Input: A number | Output: Is even, odd or zero
-function evenOddOrZero() {
+function isEvenOddOrZero() {
   rl.question(`Type a number: `, (input) => {
     const number = parseInt(input);
-    if (number > 0) {
-      console.log(`The number ${number} is positive`);
-    } else if (number < 0) {
-      console.log(`The number ${number} is negative`);
-    } else {
+    if (number === 0) {
       console.log(`The number ${number} is zero`);
+    } else {
+      if (number % 2 === 0) {
+        console.log(`The number ${number} is even`);
+      } else {
+        console.log(`The number ${number} is odd`);
+      }
     }
     rl.close();
   });
 }
-// evenOddOrZero();
+// isEvenOddOrZero();
 
 // Input: A number | Output: Is or not prime number
 function primeNumber() {
   rl.question(`Type a number: `, (input) => {
     const number = parseInt(input);
-    if (number > 0) {
-      console.log(`The number ${number} is positive`);
-    } else if (number < 0) {
-      console.log(`The number ${number} is negative`);
-    } else {
-      console.log(`The number ${number} is zero`);
+    if (number === 1) {
+      console.log(
+        `The number ${number} has only one divisor, which is itself, so it is not considered a prime number`
+      );
     }
+    isPrimeNumber(number)
+      ? console.log(`The number ${number} is a prime number`)
+      : console.log(`The number ${number} is not a prime number`);
     rl.close();
   });
 }
-// primeNumber();
+primeNumber();
+
+/* **** helpers **** */
+function isPrimeNumber(number) {
+  for (let i = 2; i < number; i++) if (number % i === 0) return false;
+  return true;
+}
