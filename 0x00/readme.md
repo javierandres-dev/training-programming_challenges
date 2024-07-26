@@ -1,6 +1,7 @@
-# training-programming_challenges | 0x00 Headings
+# training-programming_challenges | 0x00 
+## Headings
 Self-training ― Programming, Algorithms, Logic
-## Taken from [MoureDev](https://github.com/mouredev/retos-programacion-2023)
+### Taken from [MoureDev](https://github.com/mouredev/retos-programacion-2023)
 ```
 /*
  * Escribe un programa que muestre por consola (con un print) los
