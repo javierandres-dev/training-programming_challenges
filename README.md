@@ -1,8 +1,10 @@
 # training-programming_challenges
-Self-training ― Programming, Algorithms, Logic
+Self-training ― Programming, Algorithms, Logic  
+:bulb: [Headings](./headings.md)
 
-- :file_folder: [Headings](./headings.md)
-- :open_file_folder: [JavaScript](./javascript)
+:keyboard: My solutions
+
+- :file_folder: [JavaScript](./javascript)
 ---
 ## Software Developer
 Built by [javi](https://github.com/javierandres-dev/) :copyright: 2024  
