@@ -1,6 +1,6 @@
 # training-programming_challenges | 0x00 
 ## Headings
-Self-training ― Programming, Algorithms, Logic
+Self-training ― Programming, Algorithms, Logic :bulb: :keyboard:
 ### Taken from [MoureDev](https://github.com/mouredev/retos-programacion-2023)
 ```
 /*
