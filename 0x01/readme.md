@@ -2,7 +2,7 @@
 Self-training ― Programming, Algorithms, Logic :bulb: :keyboard:
 ## Taken from [MoureDev](https://github.com/mouredev/retos-programacion-2023)
 ### Headings
-00
+00 | Lenguaje
 ```
 /*
  * - Crea un comentario en el código y coloca la URL del sitio web oficial del
@@ -15,7 +15,7 @@ Self-training ― Programming, Algorithms, Logic :bulb: :keyboard:
  * - Imprime por terminal el texto: "¡Hola, [y el nombre de tu lenguaje]!"
  */
 ```
-01
+01 | EL FAMOSO "FIZZ BUZZ"
 ```
 /*
  * Escribe un programa que muestre por consola (con un print) los
@@ -26,7 +26,7 @@ Self-training ― Programming, Algorithms, Logic :bulb: :keyboard:
  * - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
  */
 ```
-02
+02 | EL "LENGUAJE HACKER"
 ```
 /*
  * Escribe un programa que reciba un texto y transforme lenguaje natural a
@@ -37,7 +37,7 @@ Self-training ― Programming, Algorithms, Logic :bulb: :keyboard:
  *   (Usa la primera opción de cada transformación. Por ejemplo "4" para la "a")
  */
 ```
-03
+03 | EL PARTIDO DE TENIS
 ```
 /*
  * Escribe un programa que muestre cómo transcurre un juego de tenis y quién lo ha ganado.
