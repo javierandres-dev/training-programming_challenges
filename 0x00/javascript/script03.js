@@ -31,33 +31,43 @@ let deuce = false,
 function printResult() {
   const s1 = score.P1 === 0 ? 'Love' : score.P1;
   const s2 = score.P2 === 0 ? 'Love' : score.P2;
-  if (score.P1 === 40 && score.P2 === 40) deuce = true;
-  if (deuce) {
-    console.log('Deuce');
-  } else if (advantage) {
-    console.log(`Ventaja ${advantage}`);
-  } else if (winner) {
-    console.log(`Ha ganado el ${winner}`);
-  } else {
-    console.log(`${s1} - ${s2}`);
-  }
+  if (score.P1 >= 40 && score.P2 >= 40) if (score.P1 === score.P2) deuce = true;
+  if (deuce) console.log('Deuce');
+  else if (advantage) console.log(`Ventaja ${advantage}`);
+  else if (winner) {
+    console.log(`Ha ganado el ${winner}\n`);
+    score.P1 = 0;
+    score.P2 = 0;
+    deuce = false;
+    advantage = null;
+    winner = null;
+  } else console.log(`${s1} - ${s2}`);
 }
 
 function setScore(player) {
   const previous = score[player];
   if (previous === 0 || previous === 15) score[player] += 15;
-  if (previous === 30) score[player] += 10;
-  if (deuce) {
+  else if (previous === 30) score[player] += 10;
+  else if (deuce) {
     score[player] += 1;
     advantage = player;
     deuce = false;
+  } else if (advantage) {
+    score[player] += 1;
+    if (score.P1 === score.P2) {
+      deuce = true;
+      advantage = null;
+    } else if (score.P1 > score.P2) {
+      winner = player1;
+      advantage = null;
+    } else if (score.P2 > score.P1) {
+      winner = player2;
+      advantage = null;
+    } else {
+      advantage = player;
+    }
   }
-  if (advantage) {
-    console.log('advantage: ', advantage);
-  }
-
   printResult();
-  console.log(winner);
 }
 
 function main(arr) {
@@ -69,3 +79,4 @@ function main(arr) {
 }
 
 main(['P1', 'P1', 'P2', 'P2', 'P1', 'P2', 'P1', 'P1']);
+main(['P1', 'P1', 'P2', 'P2', 'P1', 'P2', 'P1', 'P2', 'P2', 'P2']);
