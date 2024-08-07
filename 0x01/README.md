@@ -1,7 +1,7 @@
 # training-programming_challenges | 0x01
-Self-training ― Programming, Algorithms, Logic :bulb: :keyboard:
-## Challenges
-000 | Lenguaje | [My JavaScript solution](./javascript/script000.js)
+## Taken from [MoureDev](https://github.com/mouredev/retos-programacion-2023)
+### Challenges
+000 | Lenguaje :keyboard: [My JavaScript solution](./javascript/script000.js)
 ```
 /*
  * - Crea un comentario en el código y coloca la URL del sitio web oficial del
@@ -14,7 +14,7 @@ Self-training ― Programming, Algorithms, Logic :bulb: :keyboard:
  * - Imprime por terminal el texto: "¡Hola, [y el nombre de tu lenguaje]!"
  */
 ```
-001 | EL FAMOSO "FIZZ BUZZ" | [My JavaScript solution](./javascript/script001.js)
+001 | EL FAMOSO "FIZZ BUZZ" :keyboard: [My JavaScript solution](./javascript/script001.js)
 ```
 /*
  * Escribe un programa que muestre por consola (con un print) los
@@ -25,7 +25,7 @@ Self-training ― Programming, Algorithms, Logic :bulb: :keyboard:
  * - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
  */
 ```
-002 | EL "LENGUAJE HACKER" | [My JavaScript solution](./javascript/script002.js)
+002 | EL "LENGUAJE HACKER" :keyboard: [My JavaScript solution](./javascript/script002.js)
 ```
 /*
  * Escribe un programa que reciba un texto y transforme lenguaje natural a
@@ -36,7 +36,7 @@ Self-training ― Programming, Algorithms, Logic :bulb: :keyboard:
  *   (Usa la primera opción de cada transformación. Por ejemplo "4" para la "a")
  */
 ```
-003 | EL PARTIDO DE TENIS | [My JavaScript solution](./javascript/script003.js)
+003 | EL PARTIDO DE TENIS :keyboard: [My JavaScript solution](./javascript/script003.js)
 ```
 /*
  * Escribe un programa que muestre cómo transcurre un juego de tenis y quién lo ha ganado.
@@ -57,7 +57,7 @@ Self-training ― Programming, Algorithms, Logic :bulb: :keyboard:
  * - Consulta las reglas del juego si tienes dudas sobre el sistema de puntos.   
  */
 ```
-004 | EL GENERADOR DE CONTRASEÑAS | [My JavaScript solution](./javascript/script004.js)
+004 | EL GENERADOR DE CONTRASEÑAS :keyboard: [My JavaScript solution](./javascript/script004.js)
 ```
 /*
  * Escribe un programa que sea capaz de generar contraseñas de forma aleatoria.
@@ -69,4 +69,3 @@ Self-training ― Programming, Algorithms, Logic :bulb: :keyboard:
  * (Pudiendo combinar todos estos parámetros entre ellos)
  */
 ```
-## Taken from [MoureDev](https://github.com/mouredev/retos-programacion-2023)
