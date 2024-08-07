@@ -17,60 +17,48 @@
  * - Si quieres, puedes controlar errores en la entrada de datos.
  * - Consulta las reglas del juego si tienes dudas sobre el sistema de puntos.
  */
-const player1 = 'P1',
-  player2 = 'P2',
-  score = {
-    P1: 0,
-    P2: 0,
-  };
+const pointsSystem = {
+  0: 'Love',
+  1: 15,
+  2: 30,
+  3: 40,
+};
 
-let deuce = false,
-  advantage = null,
-  winner = null;
+const playerScore = {
+  P1: [],
+  P2: [],
+};
 
 function printResult() {
-  const s1 = score.P1 === 0 ? 'Love' : score.P1;
-  const s2 = score.P2 === 0 ? 'Love' : score.P2;
-  if (score.P1 >= 40 && score.P2 >= 40) if (score.P1 === score.P2) deuce = true;
-  if (deuce) console.log('Deuce');
-  else if (advantage) console.log(`Ventaja ${advantage}`);
-  else if (winner) {
-    console.log(`Ha ganado el ${winner}\n`);
-    score.P1 = 0;
-    score.P2 = 0;
-    deuce = false;
-    advantage = null;
-    winner = null;
-  } else console.log(`${s1} - ${s2}`);
+  const P1 = playerScore.P1.length;
+  const P2 = playerScore.P2.length;
+  if (P1 <= 3 && P2 <= 3) {
+    if (P1 === 3 && P2 === 3) console.log('\tDeuce');
+    else console.log(`\t${pointsSystem[P1]} - ${pointsSystem[P2]}`);
+  } else {
+    const diff = P1 - P2;
+    if (diff === 0) console.log('\tDeuce');
+    else if (diff === 1) console.log('\tVentaja P1');
+    else if (diff === -1) console.log('\tVentaja P2');
+    else if (diff > 1) {
+      console.log('\tHa ganado el P1\n');
+      playerScore.P1.length = 0;
+      playerScore.P2.length = 0;
+    } else if (diff < -1) {
+      console.log('\tHa ganado el P2\n');
+      playerScore.P1.length = 0;
+      playerScore.P2.length = 0;
+    }
+  }
 }
 
 function setScore(player) {
-  const previous = score[player];
-  if (previous === 0 || previous === 15) score[player] += 15;
-  else if (previous === 30) score[player] += 10;
-  else if (deuce) {
-    score[player] += 1;
-    advantage = player;
-    deuce = false;
-  } else if (advantage) {
-    score[player] += 1;
-    if (score.P1 === score.P2) {
-      deuce = true;
-      advantage = null;
-    } else if (score.P1 > score.P2) {
-      winner = player1;
-      advantage = null;
-    } else if (score.P2 > score.P1) {
-      winner = player2;
-      advantage = null;
-    } else {
-      advantage = player;
-    }
-  }
+  playerScore[player].push('won point');
   printResult();
 }
 
 function main(arr) {
+  console.log('** P1 - P2 **');
   let i = 0;
   while (i < arr.length) {
     setScore(arr[i]);
@@ -80,3 +68,5 @@ function main(arr) {
 
 main(['P1', 'P1', 'P2', 'P2', 'P1', 'P2', 'P1', 'P1']);
 main(['P1', 'P1', 'P2', 'P2', 'P1', 'P2', 'P1', 'P2', 'P2', 'P2']);
+main(['P1', 'P1', 'P1', 'P1']);
+main(['P2', 'P2', 'P2', 'P2']);

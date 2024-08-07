@@ -8,15 +8,9 @@
  * - Con o sin símbolos.
  * (Pudiendo combinar todos estos parámetros entre ellos)
  */
-(async () => {
-  const readlinePromises = require('node:readline/promises'),
-    rlp = readlinePromises.createInterface({
-      input: process.stdin,
-      output: process.stdout,
-      terminal: false,
-    });
-
-  let charactersAllowed = '';
+function getPassword(length, withUppercases, withNumbers, withSymbols) {
+  let charactersAllowed = '',
+    password = '';
 
   function addLowercase() {
     for (let i = 97; i <= 122; i++) charactersAllowed += String.fromCharCode(i);
@@ -33,22 +27,36 @@
   function addSymbols() {
     charactersAllowed += `!"#$%&'()*+,-./:;<=>?@[\\]^_\`{|}~`;
   }
+
+  if (withUppercases === 's') addUppercase();
+  if (withNumbers === 's') addNumbers();
+  if (withSymbols === 's') addSymbols();
+  addLowercase();
+
+  const arr = charactersAllowed.split('');
+
+  let i = 0;
+  while (i < length) {
+    password += arr[Math.floor(Math.random() * arr.length)];
+    i++;
+  }
+  return password;
+}
+
+(async () => {
+  const readlinePromises = require('node:readline/promises'),
+    rlp = readlinePromises.createInterface({
+      input: process.stdin,
+      output: process.stdout,
+      terminal: false,
+    });
+
   console.log('** Configuración para generar contraseña aleatoria **');
   const length = await rlp.question('* ¿Longitud? (8...16): ');
   const uppercases = await rlp.question('* ¿Letras mayúsculas? (s/n): ');
   const numbers = await rlp.question('* ¿Números? (s/n): ');
   const symbols = await rlp.question('* ¿Símbolos? (s/n): ');
   rlp.close();
-  let password = '';
-  if (uppercases === 's') addUppercase();
-  if (numbers === 's') addNumbers();
-  if (symbols === 's') addSymbols();
-  addLowercase();
-  const arr = charactersAllowed.split('');
-  let i = 0;
-  while (i < length) {
-    password += arr[Math.floor(Math.random() * arr.length)];
-    i++;
-  }
+  const password = getPassword(length, uppercases, numbers, symbols);
   console.log(`Contaseña de ${password.length} caracteres: ${password}`);
 })();
