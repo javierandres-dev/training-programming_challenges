@@ -1,7 +1,6 @@
 # training-programming_challenges | 0x00
 Self-training ― Programming, Algorithms, Logic :bulb: :keyboard:
-## Taken from [Project Euler](https://projecteuler.net/archives)
-### Headings
+## Challenges
 001 | Multiples of 3 or 5
 ```
 /*
@@ -20,3 +19,4 @@ Self-training ― Programming, Algorithms, Logic :bulb: :keyboard:
  * four million, find the sum of the even-valued terms.
  */
 ```
+## Taken from [Project Euler](https://projecteuler.net/archives)
