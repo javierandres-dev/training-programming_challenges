@@ -29,6 +29,12 @@ const playerScore = {
   P2: [],
 };
 
+function setWinner(winner) {
+  console.log(`\tHa ganado el ${winner}\n`);
+  playerScore.P1.length = 0;
+  playerScore.P2.length = 0;
+}
+
 function printResult() {
   const P1 = playerScore.P1.length;
   const P2 = playerScore.P2.length;
@@ -40,15 +46,8 @@ function printResult() {
     if (diff === 0) console.log('\tDeuce');
     else if (diff === 1) console.log('\tVentaja P1');
     else if (diff === -1) console.log('\tVentaja P2');
-    else if (diff > 1) {
-      console.log('\tHa ganado el P1\n');
-      playerScore.P1.length = 0;
-      playerScore.P2.length = 0;
-    } else if (diff < -1) {
-      console.log('\tHa ganado el P2\n');
-      playerScore.P1.length = 0;
-      playerScore.P2.length = 0;
-    }
+    else if (diff > 1) setWinner('P1');
+    else if (diff < -1) setWinner('P2');
   }
 }
 
