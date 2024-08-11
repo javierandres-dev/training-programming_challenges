@@ -19,7 +19,7 @@
  * four million, find the sum of the even-valued terms.
  */
 ```
-003 | Largest Prime Factor
+003 | Largest Prime Factor :keyboard: [My Java solution](./java/src/Script003.java)
 ```
 /*
  * The prime factors of 13195 are 5, 7, 13 and 29.
