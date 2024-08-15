@@ -1,5 +1,5 @@
 # training-programming_challenges | 0x01
-## Taken from [MoureDev](https://github.com/mouredev/retos-programacion-2023)
+## Taken from [MoureDev 2023](https://github.com/mouredev/retos-programacion-2023)
 ### Challenges
 000 | Lenguaje :keyboard: [My JavaScript solution](./javascript/script000.js)
 ```
