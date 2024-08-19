@@ -26,7 +26,7 @@
  * What is the largest prime factor of the number 600851475143?
  */
 ```
-004 | Largest Palindrome Product
+004 | Largest Palindrome Product :keyboard: [My Java solution](./java/src/Script004.java)
 ```
 /*
  * A palindromic number reads the same both ways. The largest palindrome made
@@ -34,3 +34,6 @@
  * Find the largest palindrome made from the product of two 3-digit numbers.
  */
 ```
+## Software Developer
+Built by [javi](https://github.com/javierandres-dev/) :copyright: 2024  
+Found a bug or have an idea? [Contact me](https://www.linkedin.com/in/javierandres-dev/).
