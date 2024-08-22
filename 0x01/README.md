@@ -69,6 +69,15 @@
  * (Pudiendo combinar todos estos parámetros entre ellos)
  */
 ```
+005 | PRIMO, FIBONACCI Y PAR :keyboard: [My JavaScript solution](./javascript/script005.js)
+```
+/*
+ * Escribe un programa que, dado un número, compruebe y muestre si es primo, fibonacci y par.
+ * Ejemplos:
+ * - Con el número 2, nos dirá: "2 es primo, fibonacci y es par"
+ * - Con el número 7, nos dirá: "7 es primo, no es fibonacci y es impar"
+ */
+```
 ## Software Developer
 Built by [javi](https://github.com/javierandres-dev/) :copyright: 2024  
 Found a bug or have an idea? [Contact me](https://www.linkedin.com/in/javierandres-dev/).
