@@ -53,8 +53,8 @@
  *   Deuce
  *   Ventaja P1
  *   Ha ganado el P1
- * - Si quieres, puedes controlar errores en la entrada de datos.   
- * - Consulta las reglas del juego si tienes dudas sobre el sistema de puntos.   
+ * - Si quieres, puedes controlar errores en la entrada de datos.
+ * - Consulta las reglas del juego si tienes dudas sobre el sistema de puntos.
  */
 ```
 004 | EL GENERADOR DE CONTRASEÑAS :keyboard: [My JavaScript solution](./javascript/script004.js)
@@ -76,6 +76,16 @@
  * Ejemplos:
  * - Con el número 2, nos dirá: "2 es primo, fibonacci y es par"
  * - Con el número 7, nos dirá: "7 es primo, no es fibonacci y es impar"
+ */
+```
+006 | HOLA MUNDO :keyboard: [My JavaScript solution](./javascript/script006.js)
+```
+/*
+ * Escribe un !Hola Mundo! en todos los lenguajes de programación que puedas.
+ * Seguro que hay algún lenguaje que te llama la atención y nunca has utilizado,
+ * o quizás quieres dar tus primeros pasos... ¡Pues este es el momento!
+ *
+ * A ver quién se atreve con uno de esos lenguajes que no solemos ver por ahí...
  */
 ```
 ## Software Developer
