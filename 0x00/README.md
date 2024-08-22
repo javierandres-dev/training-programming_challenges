@@ -34,6 +34,15 @@
  * Find the largest palindrome made from the product of two 3-digit numbers.
  */
 ```
+005 | Smallest Multiple :keyboard: [My Java solution](./java/src/Script005.java)
+```
+/*
+ * 2520 is the smallest number that can be divided by each of the numbers from 1
+ * to 10 without any remainder.
+ * What is the smallest positive number that is evenly divisible (divisible with
+ * no remainder) by all of the numbers from 1 to 20?
+ */
+```
 ## Software Developer
 Built by [javi](https://github.com/javierandres-dev/) :copyright: 2024  
 Found a bug or have an idea? [Contact me](https://www.linkedin.com/in/javierandres-dev/).
