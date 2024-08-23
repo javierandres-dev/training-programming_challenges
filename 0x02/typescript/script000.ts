@@ -1,4 +1,5 @@
 /*
+ * EJERCICIO:
  * - Crea un comentario en el código y coloca la URL del sitio web oficial del
  *   lenguaje de programación que has seleccionado.
  * - Representa las diferentes sintaxis que existen de crear comentarios
@@ -8,11 +9,15 @@
  *   del lenguaje (cadenas de texto, enteros, booleanos...).
  * - Imprime por terminal el texto: "¡Hola, [y el nombre de tu lenguaje]!"
  */
+
 // https://www.typescriptlang.org/
+
 /*
   Multi-line comment
 */
+
 // Single-line comment
+
 var varVariable = "variable con 'var'";
 let letVariable = "variable con 'let'";
 const variableConstantType = 'variable tipo constante';

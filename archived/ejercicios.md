@@ -54,6 +54,8 @@ mostrar los valores antes y después del intercambio
 - Programa que muestre los números de 1 a 100, si el número es multiplo de 3 en
 lugar del número mostrar Fizz, si es multiplo de 5 en lugar del número mostrar
 Buzz, si es multiplo de 3 y de 5 mostrar FizzBuzz en lugar del número
+- Programa que muestre todos los números pares comprendidos entre 10 y 55,
+omitiendo el 16 y los múltiplos de 3
 
 - Programa que dado un número, muestre los números pares desde 1 hasta n
 - Programa que dado un número, muestre la suma total desde 1 hasta n

@@ -1,4 +1,5 @@
 /*
+ * EJERCICIO:
  * - Crea ejemplos utilizando todos los tipos de operadores de tu lenguaje:
  *   Aritméticos, lógicos, de comparación, asignación, identidad, pertenencia,
  *   bits...
@@ -10,8 +11,8 @@
  * - Debes hacer print por consola del arithmeticado de todos los ejemplos.
  *
  * DIFICULTAD EXTRA (opcional):
- * Crea un programa que imprima por consola todos los números comprendidos
- * entre 10 y 55 (incluidos), pares, y que no son ni el 16 ni múltiplos de 3.
+ * - Crea un programa que imprima por consola todos los números comprendidos
+ *   entre 10 y 55 (incluidos), pares, y que no son ni el 16 ni múltiplos de 3.
  */
 
 /* OPERATORS */
@@ -39,7 +40,7 @@ assignment *= 2;
 assignment /= 2;
 assignment %= 2;
 console.log('assignment:', assignment);
-const obj = { x: 1 };
+let obj = { x: 1 };
 console.log('assignment in object:', obj);
 
 // Concatenation/String Operators
@@ -113,7 +114,7 @@ console.log('obj:', obj);
 // Spread operator
 const arr1 = ['a', 'b'];
 const arr2 = ['c', 'd'];
-const arr = [...arr1, ...arr2];
+let arr = [...arr1, ...arr2];
 console.log('spread arr:', arr);
 
 function fn(...items: any) {
@@ -147,3 +148,87 @@ function myFn() {
 myFn();
 
 /* CONTROL STRUCTURES */
+
+// if
+if (true) {
+  console.log('if...');
+}
+
+// if..else
+if (false) {
+  console.log('if...');
+} else {
+  console.log('else...');
+}
+
+// else if
+if (false) {
+  console.log('if...');
+} else if (true) {
+  console.log('else if...');
+} else {
+  console.log('else...');
+}
+
+// switch..case
+switch (0) {
+  case 0:
+    console.log('switch..case');
+    break;
+  default:
+    break;
+}
+
+// for
+for (let i = 0; i < 1; i++) {
+  console.log('for');
+}
+
+// while
+let i = 0;
+while (i < 1) {
+  console.log('while');
+  i++;
+}
+
+// do..while
+do {
+  console.log('do..while');
+} while (i < 1);
+
+// for in
+obj = { x: 1, y: 2 };
+for (const key in obj) {
+  console.log('for in:', obj[key]);
+}
+
+// for of
+for (const i of arr) {
+  console.log('for of:', i);
+}
+
+// break, continue
+for (let i = 0; i < 5; i++) {
+  if (i === 2) continue;
+  if (i === 4) break;
+  console.log('break, continue i:', i);
+}
+
+// try..catch
+try {
+  console.log('try..');
+  throw new Error('Oops!');
+} catch (error) {
+  console.log('..catch');
+}
+
+/* EXTRA */
+(() => {
+  console.log('EXTRA');
+  for (let i = 10; i <= 55; i++) {
+    if (i % 2 === 0) {
+      if (i === 16 || i % 3 === 0) continue;
+      console.log(i);
+    }
+  }
+})();
