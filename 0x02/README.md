@@ -1,7 +1,7 @@
 # training-programming_challenges | 0x02
 ## Taken from [MoureDev 2024](https://github.com/mouredev/roadmap-retos-programacion)
 ### Challenges
-000 | SINTAXIS, VARIABLES, TIPOS DE DATOS Y HOLA MUNDO :keyboard: [My TypeScript solution](./typescript/script000.ts)
+000 | SINTAXIS, VARIABLES, TIPOS DE DATOS Y HOLA MUNDO :keyboard: [My TypeScript solution](./typescript/src/script000.ts)
 ```
 /*
  * - Crea un comentario en el código y coloca la URL del sitio web oficial del
@@ -14,7 +14,7 @@
  * - Imprime por terminal el texto: "¡Hola, [y el nombre de tu lenguaje]!"
  */
 ```
-001 | OPERADORES Y ESTRUCTURAS DE CONTROL :keyboard: [My TypeScript solution](./typescript/script001.ts)
+001 | OPERADORES Y ESTRUCTURAS DE CONTROL :keyboard: [My TypeScript solution](./typescript/src/script001.ts)
 ```
 /*
  * EJERCICIO:
@@ -33,7 +33,7 @@
  *   entre 10 y 55 (incluidos), pares, y que no son ni el 16 ni múltiplos de 3.
  */
 ```
-002 | FUNCIONES Y ALCANCE :keyboard: [My TypeScript solution](./typescript/script002.ts)
+002 | FUNCIONES Y ALCANCE :keyboard: [My TypeScript solution](./typescript/src/script002.ts)
 ```
 /*
  * EJERCICIO:
