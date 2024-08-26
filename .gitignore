@@ -1,7 +1,7 @@
 ### Node ###
 node_modules
 ### TypeScript ###
-0x02/typescript/*.js
+output
 ### Java ###
 # Compiled class file
 *.class
