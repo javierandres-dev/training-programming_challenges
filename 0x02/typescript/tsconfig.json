@@ -1,3 +1,14 @@
 {
-  "compilerOptions": { "strict": true }
+  "compilerOptions": {
+    "allowJs": false,
+    "alwaysStrict": true,
+    "module": "None",
+    "noImplicitAny": true,
+    "outDir": "./output/",
+    "removeComments": true,
+    "rootDir": "./src/",
+    "strict": true,
+    "target": "esnext"
+  },
+  "include": ["./src/script002.ts"]
 }
