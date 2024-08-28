@@ -2,7 +2,6 @@
  * Sumar los números números naturales hasta N (se lo damos nosotros) de forma
  * recursiva.
  */
-
 package Challenges;
 
 import java.util.Scanner;

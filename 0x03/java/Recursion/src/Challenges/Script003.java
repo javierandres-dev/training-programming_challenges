@@ -1,7 +1,6 @@
 /*
  * Buscar un elemento de un array de forma recursiva.
  */
-
 package Challenges;
 
 public class Script003 {

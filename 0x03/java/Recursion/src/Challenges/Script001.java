@@ -1,7 +1,6 @@
 /*
  * Factorial de un número de forma recursiva.
  */
-
 package Challenges;
 
 import java.util.Scanner;
