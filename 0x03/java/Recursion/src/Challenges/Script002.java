@@ -1,6 +1,7 @@
 /*
  * Recorrer un array de forma recursiva.
  */
+
 package Challenges;
 
 public class Script002 {
