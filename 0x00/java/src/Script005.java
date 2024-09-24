@@ -3,7 +3,7 @@
  * to 10 without any remainder.
  * What is the smallest positive number that is evenly divisible (divisible with
  * no remainder) by all of the numbers from 1 to 20?
- * * Checked answer: 232792560
+ * * Checked answer: 232792560 ✅
  */
 public class Script005 {
   public static void main(String[] args) {
