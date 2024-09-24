@@ -56,6 +56,14 @@
  * natural numbers and the square of the sum.
  */
 ```
+007 | 10001st Prime :keyboard: [My Java solution](./java/src/Script007.java)
+```
+/*
+ * By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see
+ * that the 6th prime is 13.
+ * What is the 10001st prime number?
+ */
+```
 ## Software Developer
 Built by [javi](https://github.com/javierandres-dev/) :copyright: 2024  
 Found a bug or have an idea? [Contact me](https://www.linkedin.com/in/javierandres-dev/).
