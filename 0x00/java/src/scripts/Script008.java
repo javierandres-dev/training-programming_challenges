@@ -1,3 +1,4 @@
+package scripts;
 
 /*
  * The four adjacent digits in the 1000-digit number that have the greatest
