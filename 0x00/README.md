@@ -104,6 +104,13 @@
  * Find the product abc.
  */
 ```
+010 | Summation of Primes :keyboard: [My Java solution](./java/src/scripts/Script010.java)
+```
+/*
+ * The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+ * Find the sum of all the primes below two million.
+ */
+```
 ## Software Developer
 Built by [javi](https://github.com/javierandres-dev/) :copyright: 2024  
 Found a bug or have an idea? [Contact me](https://www.linkedin.com/in/javierandres-dev/).
