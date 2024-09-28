@@ -1,7 +1,7 @@
 # training-programming_challenges | 0x01
 ## Taken from [MoureDev 2023](https://github.com/mouredev/retos-programacion-2023)
 ### Challenges
-000 | Lenguaje :keyboard: [My JavaScript solution](./javascript/script000.js)
+000 | Lenguaje :keyboard: [My JavaScript Solution](./javascript/script000.js)
 ```
 /*
  * - Crea un comentario en el código y coloca la URL del sitio web oficial del
@@ -14,7 +14,7 @@
  * - Imprime por terminal el texto: "¡Hola, [y el nombre de tu lenguaje]!"
  */
 ```
-001 | EL FAMOSO "FIZZ BUZZ" :keyboard: [My JavaScript solution](./javascript/script001.js)
+001 | EL FAMOSO "FIZZ BUZZ" :keyboard: [My JavaScript Solution](./javascript/script001.js)
 ```
 /*
  * Escribe un programa que muestre por consola (con un print) los
@@ -25,7 +25,7 @@
  * - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
  */
 ```
-002 | EL "LENGUAJE HACKER" :keyboard: [My JavaScript solution](./javascript/script002.js)
+002 | EL "LENGUAJE HACKER" :keyboard: [My JavaScript Solution](./javascript/script002.js)
 ```
 /*
  * Escribe un programa que reciba un texto y transforme lenguaje natural a
@@ -36,7 +36,7 @@
  *   (Usa la primera opción de cada transformación. Por ejemplo "4" para la "a")
  */
 ```
-003 | EL PARTIDO DE TENIS :keyboard: [My JavaScript solution](./javascript/script003.js)
+003 | EL PARTIDO DE TENIS :keyboard: [My JavaScript Solution](./javascript/script003.js)
 ```
 /*
  * Escribe un programa que muestre cómo transcurre un juego de tenis y quién lo ha ganado.
@@ -57,7 +57,7 @@
  * - Consulta las reglas del juego si tienes dudas sobre el sistema de puntos.
  */
 ```
-004 | EL GENERADOR DE CONTRASEÑAS :keyboard: [My JavaScript solution](./javascript/script004.js)
+004 | EL GENERADOR DE CONTRASEÑAS :keyboard: [My JavaScript Solution](./javascript/script004.js)
 ```
 /*
  * Escribe un programa que sea capaz de generar contraseñas de forma aleatoria.
@@ -69,7 +69,7 @@
  * (Pudiendo combinar todos estos parámetros entre ellos)
  */
 ```
-005 | PRIMO, FIBONACCI Y PAR :keyboard: [My JavaScript solution](./javascript/script005.js)
+005 | PRIMO, FIBONACCI Y PAR :keyboard: [My JavaScript Solution](./javascript/script005.js)
 ```
 /*
  * Escribe un programa que, dado un número, compruebe y muestre si es primo, fibonacci y par.
@@ -78,7 +78,7 @@
  * - Con el número 7, nos dirá: "7 es primo, no es fibonacci y es impar"
  */
 ```
-006 | HOLA MUNDO :keyboard: [My JavaScript solution](./javascript/script006.js)
+006 | HOLA MUNDO :keyboard: [My JavaScript Solution](./javascript/script006.js)
 ```
 /*
  * Escribe un !Hola Mundo! en todos los lenguajes de programación que puedas.
